@@ -9,7 +9,7 @@ jobs:
   build:
     name: Create Release
     runs-on: ubuntu-latest
-    if: github.repository == 'doocs/md'
+    if: github.repository == 'wll8/md-test'
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -24,7 +24,7 @@ jobs:
           body: |
             # 微信 Markdown 编辑器 ${{ github.ref }} 发布🎈
 
-            [![github](https://badgen.net/badge/>>/GitHub/cyan)](https://github.com/doocs/md/releases) [![gitee](https://badgen.net/badge/>>/Gitee/cyan)](https://gitee.com/doocs/md/releases)
+            [![github](https://badgen.net/badge/>>/GitHub/cyan)](https://github.com/wll8/md-test/releases) [![gitee](https://badgen.net/badge/>>/Gitee/cyan)](https://gitee.com/wll8/md-test/releases)
 
             > Markdown 文档自动即时渲染为微信图文，让你不再为微信文章排版而发愁！
 
