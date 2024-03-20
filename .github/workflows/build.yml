@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    
+permissions: # 设置整个工作流的权限
+  contents: write
+  deployments: write
 
 jobs:
   build-and-deploy:
